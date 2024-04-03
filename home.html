@@ -1,0 +1,20 @@
+<title>CCTV Camera Solution</title>
+<link rel="stylesheet" href="home.css">
+​<h1>CCTV Camera Solution</h1>
+<p>This website provides a solution for CCTV camera surveillance.</p>
+<p>You can use this website to view live footage from your CCTV cameras, as well as to record and save footage.</p>
+<p>To get started, click the button below to add a new camera.</p>
+<button onclick="addCamera()">Add Camera</button>
+<script>
+    function addCamera() {
+        // Create a new HTML element for the camera.
+        var camera = document.createElement("div");
+        // Add the camera to the DOM.
+        document.body.appendChild(camera);
+        // Add the camera's name to the DOM.
+        var cameraName = document.createElement("input");
+        cameraName.setAttribute("type", "text");
+        cameraName.setAttribute("placeholder", "Camera Name");
+        camera.appendChild(cameraName);
+    }
+</script>
